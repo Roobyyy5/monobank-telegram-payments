@@ -1,0 +1,13 @@
+{
+  "name": "monobank-telegram-payments",
+  "version": "1.0.0",
+  "description": "Telegram bot that confirms plain card transfers to monobank automatically: webhook + unique kopeck amounts",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20.6" },
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "register-webhook": "node --env-file=.env scripts/register-webhook.js",
+    "test": "node --test"
+  }
+}
